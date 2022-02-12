@@ -1,0 +1,49 @@
+body {
+	background: linear-gradient(-45deg,#00BC40, #5DA3FA);
+	height: 100vh;
+}
+.container-own {
+    width: 330px;
+    margin: 0 auto;
+}
+
+.calculator {
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+}
+/* .top {
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    border-radius: 10px;
+} */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-4 button, .grid-3 button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: white;
+    font-weight: bold;
+    outline: none;
+    height: 60px;
+    margin: 10px;
+    transition: all .1s linear;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px rgb(0, 0, 0);
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.grid-4 button:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+.grid-3 button:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
